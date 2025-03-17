@@ -9,7 +9,7 @@ const Accueil = () => {
     <>
       <div className="image-container position-relative d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
         <div className="text-center">
-          <img src="#" alt="image description" className="img-fluid mb-4" style={{ maxWidth: '100%', height: 'auto' }} />
+          <img src="/assets/images/image1.jpg" alt="image description" className="img-fluid mb-4" style={{ maxWidth: '100%', height: 'auto' }} />
           <h1>BAMBOU <br />AGIR POUR LE VIETNAM</h1>
           <h3>PARRAINEZ UN ENFANT - ACCOMPAGNER UNE VIE</h3>
 
@@ -23,52 +23,60 @@ const Accueil = () => {
       </div>
 
       <h3>PARRAINEZ UN ENFANT AU VIETNAM</h3>
-      <p>
-        C'est soulager financièrement une famille pour permettre à son enfant de rester scolarisé le plus longtemps possible.
-        C'est donner les moyens à un enfant de suivre une scolarité normale et régulière jusqu'au terme de son projet de vie.
-        C'est accéder à la connaissance, c'est s'ouvrir sur le monde et participer plus activement au développement de son pays.
-        C'est diriger un enfant vers un métier valorisant et mieux rémunéré.
-        C'est le soutenir dans les moments difficiles, l'encourager et le féliciter via des courriers ou internet.
-        C'est réaliser un geste de solidarité car tous les enfants du monde sont égaux.
-      </p>
+      <div className="container mt-5">
+        <Row className="align-items-center">
+          {/* Colonne pour l'image */}
+          <Col md={6}>
+            <img src="/assets/images/image6.jpg" alt="image description" className="img-fluid" />
+          </Col>
 
-      <img src="/" alt="image description" className="img-fluid mb-4" />
+          {/* Colonne pour le texte */}
+          <Col md={6}>
+            <p>
+              C'est soulager financièrement une famille pour permettre à son enfant de rester scolarisé le plus longtemps possible.
+              C'est donner les moyens à un enfant de suivre une scolarité normale et régulière jusqu'au terme de son projet de vie.
+              C'est accéder à la connaissance, c'est s'ouvrir sur le monde et participer plus activement au développement de son pays.
+              C'est diriger un enfant vers un métier valorisant et mieux rémunéré.
+              C'est le soutenir dans les moments difficiles, l'encourager et le féliciter via des courriers ou internet.
+              C'est réaliser un geste de solidarité car tous les enfants du monde sont égaux.
+            </p>
+          </Col>
+        </Row>
+      </div>
 
       {/* Carousel */}
       <Carousel data-bs-theme="dark">
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=First slide&bg=f5f5f5"
+            src="/assets/images/image2.jpg" // Remplace par le chemin correct
             alt="First slide"
           />
           <Carousel.Caption>
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h5>Ecole Mai Lihn</h5>
+            <p>Photos 2025.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=Second slide&bg=eee"
+            src="/assets/images/image3.jpg" // Remplace par le chemin correct
             alt="Second slide"
           />
           <Carousel.Caption>
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h5>Ecole Mai Lihn</h5>
+            <p>Photos 2025.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=e5e5e5"
+            src="/assets/images/image4.jpg" // Remplace par le chemin correct
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h5>Third slide label</h5>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            <h5>Ecole Mai Lihn</h5>
+            <p>Photos 2025.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
