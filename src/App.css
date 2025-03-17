@@ -1,15 +1,15 @@
 #root {
  /* Assurez-vous que le body prenne toute la largeur et la hauteur */
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-  }
+ body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
   
   /* Espacement sous la navbar pour éviter que le contenu se superpose */
   .App {
-    padding-top: 56px; /* Ajustez si vous avez un header fixe */
+    padding-top: 66px; /* Ajustez si vous avez un header fixe */
   }
   
 }

@@ -3,13 +3,27 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import createUtilityClassName from 'react-bootstrap/esm/createUtilityClasses';
 import { Button, Carousel, Card } from 'react-bootstrap'; // Ajout de l'importation de Card et Carousel
+import { Row, Col } from 'react-bootstrap';
+
+
 
 const Accueil = () => {
   return (
     <>
-      <div className="image-container position-relative d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
-        <div className="text-center">
-          <img src="/assets/images/image1.jpg" alt="image description" className="img-fluid mb-4" style={{ maxWidth: '100%', height: 'auto' }} />
+      <div
+        className="image-container-fluid position-relative d-flex justify-content-center align-items-center"
+        style={{ height: '50vh', overflow: 'hidden' }}
+      >
+        {/* L'image occupe toute la largeur et hauteur */}
+        <img
+          src="/assets/images/image5.jpg"
+          alt="image description"
+          className="img-fluid position-absolute"
+          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+        />
+
+        {/* Contenu superposé à l'image */}
+        <div className="text-center text-white position-relative z-index-1">
           <h1>BAMBOU <br />AGIR POUR LE VIETNAM</h1>
           <h3>PARRAINEZ UN ENFANT - ACCOMPAGNER UNE VIE</h3>
 
