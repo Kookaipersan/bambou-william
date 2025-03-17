@@ -5,8 +5,8 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 const Actualites = () => {
   return (
 <div>
-      <h1>Contact</h1>
-      <p>Voici notre page de contact.</p>
+      <h1>Actualités</h1>
+      <p>Voici notre page Actualités.</p>
     </div>
   );
 };

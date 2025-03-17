@@ -16,16 +16,24 @@ import NousSommes from './components/Noussommes';  // Importation du composant N
 
 const App = () => {
   return (
-    <div className="App">
-      <Header />  {/* Utilisation du Header */}
-      <Accueil />  {/* Utilisation du composant Accueil */}
-      <Action />  {/* Utilisation du composant Action */}
-      <Actualites />  {/* Utilisation des Actualités */}
-      <Contact />  {/* Utilisation du composant Contact */}
-      <Don />  {/* Utilisation du composant Don */}
-      <NousSommes />  {/* Utilisation du composant NousSommes */}
-      <Footer />  {/* Utilisation du Footer */}
-    </div>
+    <Router>  {/* Encapsulez tout le contenu dans Router */}
+      <div className="App">
+        <Header />  {/* Affichage du Header */}
+
+        <Container>
+          <Routes>  {/* Définition des routes */}
+            <Route path="/" element={<Accueil />} />  {/* Page d'accueil */}
+            <Route path="/Actions" element={<Action />} />  {/* Page des actions */}
+            <Route path="/Actualites" element={<Actualites />} />  {/* Page des actualités */}
+            <Route path="/Contact" element={<Contact />} />  {/* Page de contact */}
+            <Route path="/Don" element={<Don />} />  {/* Page de don */}
+            <Route path="/Noussommes" element={<NousSommes />} />  {/* Page "Nous sommes" */}
+          </Routes>
+        </Container>
+
+        <Footer />  {/* Affichage du Footer */}
+      </div>
+    </Router>
   );
 }
 

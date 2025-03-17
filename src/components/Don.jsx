@@ -5,8 +5,8 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 const Don = () => {
   return (
 <div>
-      <h1>Contact</h1>
-      <p>Voici notre page de contact.</p>
+      <h1>Don</h1>
+      <p>Voici notre page de Don.</p>
     </div>
   );
 };
