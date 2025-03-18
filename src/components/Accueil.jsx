@@ -7,46 +7,57 @@ import { Row, Col } from 'react-bootstrap';
 
 
 
+
+
+
 const Accueil = () => {
   return (
     <>
+    <div
+      className="image-container position-relative"
+      style={{ height: '50vh', overflow: 'hidden' }}
+    >
+      {/* L'image occupe toute la largeur et hauteur */}
+      <img
+        src="/assets/images/image5.jpg"
+        alt="image description"
+        className="img-fluid"
+        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+      />
+
+      {/* Contenu superposé à l'image avec arrière-plan semi-transparent */}
       <div
-        className="image-container-fluid position-relative d-flex justify-content-center align-items-center"
-        style={{ height: '50vh', overflow: 'hidden' }}
+        className="text-center text-white position-absolute top-50 start-50 translate-middle"
+        style={{
+          backgroundColor: 'rgba(0, 0, 0, 0.5)',
+          padding: '20px',
+          borderRadius: '10px',
+        }}
       >
-        {/* L'image occupe toute la largeur et hauteur */}
-        <img
-          src="/assets/images/image5.jpg"
-          alt="image description"
-          className="img-fluid position-absolute"
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-        />
+        <h1>BAMBOU <br />AGIR POUR LE VIETNAM</h1>
+        <h3>PARRAINEZ UN ENFANT - ACCOMPAGNER UNE VIE</h3>
 
-        {/* Contenu superposé à l'image */}
-        <div className="text-center text-white position-relative z-index-1">
-          <h1>BAMBOU <br />AGIR POUR LE VIETNAM</h1>
-          <h3>PARRAINEZ UN ENFANT - ACCOMPAGNER UNE VIE</h3>
-
-          {/* Conteneur pour les boutons */}
-          <div className="d-flex justify-content-center mt-4">
-            <Button href="#" className="mx-2">PARRAINEZ UN ENFANT</Button>
-            <Button href="#" className="mx-2">FAIRE UN DON</Button>
-            <Button href="#" className="mx-2">ADHÉRER</Button>
-          </div>
+        {/* Conteneur pour les boutons */}
+        <div className="d-flex justify-content-center mt-4">
+          <Button href="#" className="mx-2">PARRAINEZ UN ENFANT</Button>
+          <Button href="#" className="mx-2">FAIRE UN DON</Button>
+          <Button href="#" className="mx-2">ADHÉRER</Button>
         </div>
       </div>
+    </div>
+  
 
-      <h3>PARRAINEZ UN ENFANT AU VIETNAM</h3>
+      <h3 className='text-center mt-3' >PARRAINEZ UN ENFANT AU VIETNAM</h3>
       <div className="container mt-5">
         <Row className="align-items-center">
           {/* Colonne pour l'image */}
           <Col md={6}>
-            <img src="/assets/images/image6.jpg" alt="image description" className="img-fluid" />
+            <img src="/assets/images/image6.jpg" alt="image description" className="img-fluid mb-2" />
           </Col>
 
           {/* Colonne pour le texte */}
           <Col md={6}>
-            <p>
+            <p className='mb-1'>
               C'est soulager financièrement une famille pour permettre à son enfant de rester scolarisé le plus longtemps possible.
               C'est donner les moyens à un enfant de suivre une scolarité normale et régulière jusqu'au terme de son projet de vie.
               C'est accéder à la connaissance, c'est s'ouvrir sur le monde et participer plus activement au développement de son pays.
@@ -57,9 +68,9 @@ const Accueil = () => {
           </Col>
         </Row>
       </div>
-
+<div className='mt-5 mb-5'>
       {/* Carousel */}
-      <Carousel data-bs-theme="dark">
+      <Carousel data-bs-theme="dark mt-5">
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -94,16 +105,80 @@ const Accueil = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      </div>
 
-      {/* Card */}
-      <Card>
-        <Card.Img variant="top" src="#" />
-        <Card.Body>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of the card's content.
-          </Card.Text>
-        </Card.Body>
-      </Card>
+  
+      <Row className="g-4">
+      {/* Carte 1 */}
+      <Col lg={4} md={6} sm={12}>
+        <Card style={{ width: '100%' }}>
+          <Card.Img variant="top" src="/assets/images/image4.jpg" />
+          <Card.Body>
+            <Card.Title>350</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the bulk of the card's content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+      </Col>
+
+      {/* Carte 2 */}
+      <Col lg={4} md={6} sm={12}>
+        <Card style={{ width: '100%' }}>
+          <Card.Img variant="top" src="/assets/images/image4.jpg" />
+          <Card.Body>
+            <Card.Title>500</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the bulk of the card's content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+      </Col>
+
+      {/* Carte 3 */}
+      <Col lg={4} md={6} sm={12}>
+        <Card style={{ width: '100%' }}>
+          <Card.Img variant="top" src="/assets/images/image4.jpg" />
+          <Card.Body>
+            <Card.Title>90 %</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the bulk of the card's content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+      </Col>
+
+      {/* Carte 4 */}
+      <Col lg={4} md={6} sm={12}>
+        <Card style={{ width: '100%' }}>
+          <Card.Img variant="top" src="/assets/images/image4.jpg" />
+          <Card.Body>
+            <Card.Title>DISPENSAIRE</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the bulk of the card's content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+      </Col>
+
+      {/* Carte 5 */}
+      <Col lg={4} md={6} sm={12}>
+        <Card style={{ width: '100%' }}>
+          <Card.Img variant="top" src="/assets/images/image4.jpg" />
+          <Card.Body>
+            <Card.Title>Réalisations</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the bulk of the card's content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+      </Col>
+    </Row>
     </>
   );
 };

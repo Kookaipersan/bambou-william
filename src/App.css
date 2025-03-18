@@ -5,12 +5,25 @@
   padding: 0;
   width: 100%;
   height: 100%;
+  background: #f8f9fa;
 }
   
   /* Espacement sous la navbar pour éviter que le contenu se superpose */
   .App {
-    padding-top: 66px; /* Ajustez si vous avez un header fixe */
+    padding-top: 76px; /* Ajustez si vous avez un header fixe */
   }
-  
+ 
+  p{
+    font-size: 14px;
+  }
+  /* Dans ton fichier CSS */
+a {
+  text-decoration: none;
+}
+div.container{
+  padding : 0;
+  margin: 0,0;
+}
+
 }
 
